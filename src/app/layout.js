@@ -8,8 +8,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <MainLayout>
-      {children}
-    </MainLayout>
+    
+      <MainLayout>{children}</MainLayout>
+      
+    
   )
 }
