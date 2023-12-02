@@ -11,7 +11,7 @@ import { Layout, Menu, Button, theme } from 'antd';
 const { Header, Sider, Content } = Layout;
 
 
-export function MainLayout({children}) {
+export function MainLayout() {
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
@@ -69,7 +69,7 @@ export function MainLayout({children}) {
             background: colorBgContainer,
           }}
         >
-          {children}
+          {/* {children} */}
         </Content>
       </Layout>
     </Layout>
