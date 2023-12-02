@@ -1,5 +1,6 @@
-import { MainLayout } from '@/components/pages/main'
-import './globals.css'
+"use client";
+// import './globals.css'
+
 import React, { useState } from 'react';
 import {
   MenuFoldOutlined,
@@ -11,10 +12,10 @@ import {
 import { Layout, Menu, Button, theme } from 'antd';
 const { Header, Sider, Content } = Layout;
 
-export const metadata = {
-  title: 'Projet Next JS and Ant design',
-  description: 'Mon projet',
-}
+// export const metadata = {
+//   title: 'Projet Next JS and Ant design',
+//   description: 'Mon projet',
+// }
 
 export default function RootLayout({ children }) {
   const [collapsed, setCollapsed] = useState(false);
@@ -58,7 +59,7 @@ export default function RootLayout({ children }) {
             background: colorBgContainer,
           }}
         >
-          {/* <Button
+          <Button
             type="text"
             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             onClick={() => setCollapsed(!collapsed)}
@@ -67,7 +68,7 @@ export default function RootLayout({ children }) {
               width: 64,
               height: 64,
             }}
-          /> */}
+          />
         </Header>
         <Content
           style={{
