@@ -1,16 +1,13 @@
+'use client';
+
+// If used in Pages Router, is no need to add "use client"
 import React from 'react';
-import { Col, Row } from 'antd';
-const App = () => (
-  <Row>
-    <Col xs={2} sm={4} md={6} lg={8} xl={10}>
-      Col
-    </Col>
-    <Col xs={20} sm={16} md={12} lg={8} xl={4}>
-      Col
-    </Col>
-    <Col xs={2} sm={4} md={6} lg={8} xl={10}>
-      Col
-    </Col>
-  </Row>
+import { Button } from 'antd';
+
+const Home = () => (
+  <div className="App">
+    <Button type="primary">Button</Button>
+  </div>
 );
-export default App;
+
+export default Home;

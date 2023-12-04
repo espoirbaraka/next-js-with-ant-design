@@ -12,10 +12,10 @@ import {
 import { Layout, Menu, Button, theme } from 'antd';
 const { Header, Sider, Content } = Layout;
 
-// export const metadata = {
-//   title: 'Projet Next JS and Ant design',
-//   description: 'Mon projet',
-// }
+export const metadata = {
+  title: 'Projet Next JS and Ant design',
+  description: 'Mon projet',
+}
 
 export default function RootLayout({ children }) {
   const [collapsed, setCollapsed] = useState(false);
@@ -23,10 +23,10 @@ export default function RootLayout({ children }) {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-<Layout>
-      <Sider trigger={null} 
-      collapsible 
-      collapsed={collapsed}
+    <Layout>
+      <Sider trigger={null}
+        collapsible
+        collapsed={collapsed}
       >
         <div className="demo-logo-vertical" />
         <Menu
